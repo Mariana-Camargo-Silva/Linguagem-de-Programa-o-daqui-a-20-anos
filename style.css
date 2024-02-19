@@ -1,0 +1,93 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(font/Roboto-Black.ttf)
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/015/443/original/blue-geometric-lines-with-triangle-shapes-free-video.jpg);
+    background-color: #7ffbfff1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+text-align: center; 
+top: 40px;
+background-color:#2c3ee0a8 ;
+font-size: 300%;
+font-family: font1;
+}
+
+p{
+    text-align: center;
+    justify-content: center;
+    font-size: 150%;
+    font-family: font1;
+    
+}
+
+img{
+    position: relative;
+    left: 280px;
+}
+
+iframe{
+    width: 300px;
+    position: relative;
+    left: 300px;   
+}
+
+section{
+    left:46% ;
+    font-size: 70%;
+    
+    
+}
+    
+input{
+    position: absolute;
+    font-size: 150%;
+    left: 599px;
+    background-color: #2c3ee0fd;
+}
+
+.animacao{
+    width: 160px;
+    top: 12%;
+    left: 15px;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running; 
+}
+ @keyframes move{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(calc(100vw - 200px));
+  }
+ }
+ @media (max-width: 760px){
+    img{
+     left: 2%;
+    }
+    iframe{
+        left:  3%;
+        height: 60%;
+        width: 96%;
+       
+    }
+   .animacao{
+    top: 37%;
+   }
+   input{
+    left: 20%;
+   }
+    
+ }
